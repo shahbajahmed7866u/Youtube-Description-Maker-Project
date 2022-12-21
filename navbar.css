@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#nav{
+    background-color: #027bc7;
+    display: flex;
+}
+#logo{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+width: 220px;
+margin-left: 20px;
+margin-right: 100px;
+}
+#logo>a{
+   display: flex;
+   text-decoration: none;
+   color: white;
+}
+#logo>a:focus{
+   display: flex;
+   text-decoration: none;
+   color: white;
+}
+#logoImg{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+#credit{
+    font-size: 12px;
+margin-top: 13%;
+}
+#navOption{
+    position: relative;
+    display: inline-flex;
+    width: 800px;
+    justify-content: space-between;
+    font-size: 0;
+    /* height: 50px; */
+    /* border: 2px solid red; */
+}
+#navOption>a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    /* width: 220px; */
+    text-align: center;
+    top: 35%;
+    /* height: 100%; */
+/* border: 2px solid white; */
+z-index: 1;
+}
+
+#navOption>.animation{
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    z-index: 0;
+    background-color: #0067a7;
+    transition: all .3s ease 0s;
+}
+#navOption>:nth-child(1){
+width: 200px;
+}
+#navOption>:nth-child(1):hover~.animation{
+    width: 200px;
+    left: 0;
+}
+#navOption>:nth-child(2){
+width: 200px;
+}
+#navOption>:nth-child(2):hover~.animation{
+    width: 200px;
+    left: 200px;
+}
+#navOption>:nth-child(3){
+width: 200px;
+}
+#navOption>:nth-child(3):hover~.animation{
+    width: 200px;
+    left: 400px;
+}
+#navOption>:nth-child(4){
+width: 200px;
+}
+#navOption>:nth-child(4):hover~.animation{
+    width: 200px;
+    left: 600px;
+}
+
